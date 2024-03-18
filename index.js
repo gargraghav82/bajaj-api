@@ -12,7 +12,7 @@ app.get('/' , (req , res) => {
     res.json("Hello World");
 })
 
-app.post('/bhfl' , (req , res) => {
+app.post('/bfhl' , (req , res) => {
     const {data} = req.body;
     var odd_numbers = [];
     var even_numbers = [];
