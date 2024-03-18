@@ -5,6 +5,10 @@ const app = express();
 
 app.use(bodyParser.json());
 
+app.get('/' , (req , res) => {
+    res.json("Hello World");
+})
+
 app.post('/bhfl' , (req , res) => {
     const {data} = req.body;
     var odd_numbers = [];
