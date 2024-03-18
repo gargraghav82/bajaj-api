@@ -32,6 +32,7 @@ app.post('/bhfl' , (req , res) => {
         "is_success" : true ,
         "user_id" : "garg_raghav_18092004" ,
         "roll_number" : "2110991107" ,
+        "email" : "raghav1107.be21@chitkara.edu.in" ,
         odd_numbers ,
         even_numbers ,
         alphabets
