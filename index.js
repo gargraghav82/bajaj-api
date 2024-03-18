@@ -13,7 +13,8 @@ app.get('/' , (req , res) => {
 })
 
 app.post('/bfhl' , (req , res) => {
-    const {data} = req.body;
+    try{
+        const {data} = req.body;
     var odd_numbers = [];
     var even_numbers = [];
     var alphabets = [];
@@ -40,6 +41,11 @@ app.post('/bfhl' , (req , res) => {
         even_numbers ,
         alphabets
     });
+    }catch(err){
+        return res.status(403).json({
+            "message" : "Internal Server Error"
+        })
+    }
 })
 
 app.listen(3000 , (PORT) => {
